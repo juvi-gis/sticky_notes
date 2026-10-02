@@ -1,0 +1,8 @@
+# virtual environment
+venv/
+
+# generated files
+db.sqlite3
+staticfiles/
+__pycache__/
+*.pyc

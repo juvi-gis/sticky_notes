@@ -1,0 +1,14 @@
+{# shows all the notes #}
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="{% url 'note_create' %}">Add note</a>
+  <ul>
+    {% for note in notes %}
+      <li>
+        <a href="{% url 'note_detail' pk=note.pk %}">{{ note.title }}</a>
+        <p>{{ note.content }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

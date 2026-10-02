@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* yellow box so each note looks like a sticky note */
+li {
+  background-color: #ffe066;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+}

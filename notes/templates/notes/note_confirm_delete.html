@@ -1,0 +1,12 @@
+{# asks "are you sure" before deleting, the delete happens on POST #}
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Delete note</h2>
+  <p>Are you sure you want to delete "{{ note.title }}"?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Yes, delete</button>
+  </form>
+  <a href="{% url 'note_detail' pk=note.pk %}">Cancel</a>
+{% endblock %}
